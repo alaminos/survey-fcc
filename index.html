@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Questionnaire</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+	</head>
+  
+	<body>
+		<div id="heading">
+			<h1>Questionnaire</h1>
+			<p>Je vous invite à repondre aux suivants questions afin que je puisse améliorer ce site. Clicker "envoyer" quand vous avez fini.</p>
+		</div>
+		<div id="form-wrapper">
+			<form action="" method="">
+				<div class="form-row first3">
+					<label for="name">* Nom</label>
+					<input name="name" type="text" placeholder="Votre nom" required autofocus>
+				</div>
+				
+				<div class="form-row first3">
+					<label for="email">* Email</label>
+					<input name="email" type="email" placeholder="Mettez votre email" required>
+				</div>
+				
+				<div class="form-row first3">
+					<label for="age">Age</label>
+					<input name="age" type="number" min="6" max="133">
+				</div>
+				
+				<!--DROP DOWN MENU -->
+				
+				<div class="form-row">  
+					<label for="currentPos">Choissisez le profil qui correspond mieux à votre cas</label>
+					<select id="dropdown" name="currentPos" class="dropdown">
+					  <option disabled value>Choissisez</option>
+					  <option value="student">J'étude l'espagnol à l'école</option>
+					  <option value="job">Je suis prof d'espagnol</option>
+					  <option value="learner">Je passais par ici</option>
+					  <option value="NSP">Autre</option>
+					  
+					</select>
+				</div>
+				
+				
+				
+				<div class="form-row" id="RatingSection">
+					<label for="userRating">Recommanderiez-vous ce site?</label>  
+					<!-- está bien el atributo for?  -->
+					<ul style="list-style: none;">
+						<li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Oh que oui!</label></li>
+						<li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Peut-être</label></li>
+						<li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Je ne sais pas</label></li>
+					</ul>
+				
+				</div>
+				
+				
+				<div class="form-row">
+					<label for="fave-things">Quelles types de contenu préferez vous? Vous pouvez choisir plusieurs.</label>
+					<ul id="preferences" style="list-style: none;">
+					  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Musique</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Culture</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Vidéos</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Exercises audio</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Video-blog</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">BD</label></li>
+					  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Littérature</label></li>
+					</ul>
+				
+				</div>
+				
+				<div class="form-row">
+					<label for="comments">Commentaire</label>
+					<textarea name="comments" type="textarea" placeholder="Expliquez vos reponses, commentez quelque chose qui vous a arrivé aujourd'hui, partagez votre poème préféré, etc." rows="10" cols="50"></textarea>
+				
+				
+				</div>
+				
+			
+			
+				<button class="myButton">Envoyer</button>
+			</form>
+			
+			<div id="thinkerBox"><img src="thinker.png" alt="thinker"></div></div> <!---->
+		</div>
+	</body>
+<html>
+
